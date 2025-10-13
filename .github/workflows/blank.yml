@@ -1,0 +1,7 @@
+name: "my first git action"
+
+on: workflow_dispatch
+
+jobs:
+  terraform_jobs: 
+     runs-on: Gitaction
