@@ -14,7 +14,7 @@ jobs:
            version: 1.13.3
        - name: AWS OIDC Auth & Services Setup
          uses: KoalaOps/aws-oidc-action@v1.0.0
-          with:
+         with:
            aws_region: us-east-1
            role_to_assume: arn:aws:iam::124355674127:role/githubaction-role
 
