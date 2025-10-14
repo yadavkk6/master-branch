@@ -1,7 +1,9 @@
 name: "my first git action"
 
 on: workflow_dispatch
-
+permissions:
+      id-token: write
+      contents: read
 jobs:
   terraform_jobs: 
      runs-on: Gitaction
