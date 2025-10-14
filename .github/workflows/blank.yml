@@ -12,10 +12,10 @@ jobs:
          uses: little-core-labs/install-terraform@v2.0.0
          with:
            version: 1.13.3
-       - name: AWS OIDC Auth & Services Setup
-         uses: KoalaOps/aws-oidc-action@v1.0.0
+       - name: Configure AWS Credentials for China region audience
+         uses: aws-actions/configure-aws-credentials@v5.1.0
          with:
-           aws_region: us-east-1
-           role_to_assume: arn:aws:iam::124355674127:role/githubaction-role
-
+        audience: sts.amazonaws.com.cn
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::124355674127:role/githubaction-role
           
