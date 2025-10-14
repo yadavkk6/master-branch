@@ -12,7 +12,7 @@ jobs:
          uses: little-core-labs/install-terraform@v2.0.0
          with:
            version: 1.13.3
-       - name: Configure AWS Credentials for China region audience
+       - name: Configure AWS Credentials for US region audience
          uses: aws-actions/configure-aws-credentials@v5.1.0
          with:
            audience: sts.amazonaws.com
