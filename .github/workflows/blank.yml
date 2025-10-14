@@ -15,7 +15,7 @@ jobs:
        - name: Configure AWS Credentials for China region audience
          uses: aws-actions/configure-aws-credentials@v5.1.0
          with:
-        audience: sts.amazonaws.com.cn
-          aws-region: us-east-1
-          role-to-assume: arn:aws:iam::124355674127:role/githubaction-role
+           audience: sts.amazonaws.com
+           aws-region: us-east-1
+           role-to-assume: arn:aws:iam::124355674127:role/githubaction-role
           
